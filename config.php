@@ -7,7 +7,7 @@ define('DB_PASSWORD', 'sua_senha_do_banco');
 define('DB_NAME', 'seu_nome_do_banco');
 
 // Conectar ao banco de dados
-$conn = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+$conn = new mysqli('127.0.0.1', 'root', '', 'projetophp');
 
 // Verificar conexão
 if ($conn->connect_error) {
